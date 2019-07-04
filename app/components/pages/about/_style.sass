@@ -1,0 +1,459 @@
+.about-home
+  background: rgba(#4A81ED, .5)
+  padding: 371px 0 75px
+  .container
+    flex-direction: column
+    align-items: center
+
+.box-mission
+  background: #fff
+  box-shadow: 0px 8px 35px rgba(8, 60, 164, 0.3)
+  border-radius: 10px
+  padding: 32px 30px 38px
+  min-width: 457px
+  max-width: 457px
+  margin: 0 auto 39px
+  h5
+    text-align: center
+    width: 100%
+    margin: 0 auto 19px
+    font-family: 'Gotham-m', sans-serif
+  p
+    text-align: center
+    font-size: 24px
+    letter-spacing: -0.5px
+    line-height: 34px
+
+.task-wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+.task-box
+  display: flex
+  align-items: center
+  background: #fff
+  padding: 9px
+  box-sizing: border-box
+  box-shadow: 0 8px 35px rgba(8, 60, 164, 0.3)
+  border-radius: 40px
+  height: 81px
+  cursor: pointer
+  transition: .3s ease
+  margin: 0 16px 0 0
+  max-width: 394px
+  overflow: hidden
+  &:last-child
+    margin: 0
+  &:hover
+    min-width: 394px
+    .text
+      padding: 0 16px 0 20px
+
+      opacity: 1
+      pointer-events: auto
+      position: relative
+      left: 0
+  .icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 64px
+    min-width: 64px
+    height: 64px
+    border-radius: 50%
+    cursor: pointer
+  .text
+    left: -100%
+    position: absolute
+    top: 0
+    opacity: 0
+    width: calc(100% - 64px)
+    font-size: 18px
+    line-height: 24px
+    letter-spacing: -0.5px
+    pointer-events: none
+    transition: .3s ease
+
+
+//company-goal
+.company-goal
+  padding: 103px 0 182px
+  position: relative
+  .goal-description
+    max-width: 670px
+    margin: 0 auto
+    text-align: center
+    font-size: 18px
+    line-height: 36px
+  .figure-icon
+    &:nth-child(2)
+      left: auto
+      right: 10%
+      top: 0
+    &:nth-child(3)
+      left: auto
+      right: 0
+      top: -40%
+    &:nth-child(4)
+      left: auto
+      right: -20%
+      top: -10%
+
+.company-goal__slider
+  width: 100%
+  margin: 100px auto 0
+  .slick-dots
+    margin-top: 0
+  .slick-arrow
+    width: 40px
+    height: 23px
+    background: url("../img/arrow-slide.svg") no-repeat center
+      size: contain
+    &:before
+      display: none
+    &:hover
+      opacity: .5
+  .slick-prev
+    transform: rotate(180deg) translateY(-50%)
+    left: -68px
+  .slick-next
+    right: -68px
+  .slick-disabled
+    opacity: .5
+
+
+.company-goal__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  width: 277px
+  height: 505px
+  box-shadow: 0px 8px 35px rgba(8, 60, 164, 0.15)
+  border-radius: 10px
+  background: #fff
+  margin: 40px auto
+  .photo
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    height: 365px
+    img
+      height: 100%
+      max-width: none
+      border-radius: 10px 10px 0 0
+  .text
+    padding: 20px 30px
+    box-sizing: border-box
+    width: 100%
+    height: calc(100% - 365px)
+  h5
+    text-align: center
+    font-size: 24px
+    margin: 0 auto 20px
+  p
+    text-align: center
+    font-size: 18px
+    line-height: 24px
+    font-family: 'Gotham-m', sans-serif
+
+
+//certificate
+.certificate
+  padding: 83px 0 162px
+  position: relative
+  .container
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+  .image-bg
+    width: 1575px
+    height: 905px
+    right: -345px
+  p
+    max-width: 579px
+    font-size: 30px
+    letter-spacing: -0.5px
+    line-height: 41px
+
+.certificate-slider
+  width: 475px
+  margin: 70px 0 0
+  .slick-arrow
+    width: 40px
+    height: 23px
+    background: url("../img/arrow-slide.svg") no-repeat center
+      size: contain
+    &:before
+      display: none
+    &:hover
+      opacity: .5
+  .slick-prev
+    transform: rotate(180deg) translateY(-50%)
+    left: 0
+  .slick-next
+    right: 0
+  .slick-disabled
+    opacity: .5
+
+.certificate-box
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  margin: 0 auto
+  width: 359px
+  .img
+    width: 100%
+    margin: 0 auto 35px
+    box-shadow: 0px 8px 35px rgba(8, 60, 164, 0.15)
+    border-radius: 10px
+    background: #fff
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 505px
+  p
+    font-size: 24px
+    text-align: center
+    font-family: 'Gotham-m', sans-serif
+    width: 100%
+
+.page-about
+  .reviews
+    background: #DDE8FE
+
+
+//map
+.map
+  width: 100%
+  height: 100%
+  iframe
+    width: 100%
+    height: 100%
+
+
+.maps-section
+  position: relative
+  height: 946px
+  width: 100%
+  margin: 141px 0 0
+  .box-contacts
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F0FFEE
+    border-radius: 10px
+    width: 649px
+    box-shadow: 0px 8px 25px rgba(0, 70, 209, 0.15)
+    padding: 90px 79px 88px
+    color: #434549
+    font-size: 24px
+    position: absolute
+    left: 26%
+    top: 50%
+    transform: translate(0,-50%)
+    h2
+      text-align: left
+    a
+      color: #434549
+      margin: 0 0 14px
+      &:hover
+        color: $accent
+    h5
+      margin: 60px 0 22px
+      font-family: 'Gotham-m', sans-serif
+    .address
+      margin: 60px 0 14px
+
+
+//callback-section
+.callback-section
+  padding: 196px 0 224px
+  position: relative
+  overflow: hidden
+  .image-wrapper
+    position: absolute
+    right: -145px
+    top: 102px
+    width: 1103px
+    height: 873px
+    .icon
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #ffffff
+      box-shadow: 0 4px 25px rgba(0, 28, 82, 0.5)
+      border-radius: 50%
+      width: 37px
+      height: 37px
+
+      svg
+        path
+          fill: $accent
+      &:nth-child(2)
+        bottom: 89px
+        left: 328px
+      &:nth-child(3)
+        left: 440px
+        bottom: 142px
+      &:nth-child(4)
+        bottom: 321px
+        left: 683px
+      &:nth-child(5)
+        bottom: 410px
+        left: 460px
+      &:nth-child(6)
+        left: 153px
+        bottom: 399px
+      &:nth-child(7)
+        bottom: 536px
+        left: 365px
+      &:nth-child(8)
+        left: 280px
+        bottom: 625px
+      &:nth-child(9)
+        top: 57px
+        left: 515px
+    .image
+      z-index: 1
+      position: relative
+    .circle-box
+      position: absolute
+      background: rgba(#4A81ED, .1)
+      border-radius: 50%
+
+      &:nth-child(1)
+        width: 372px
+        height: 368px
+        left: 10%
+        bottom: 7%
+        &:before
+          width: 430px
+          height: 400px
+          bottom: -1%
+          left: -16%
+          top: auto
+          right: auto
+          transform: rotate(-40deg)
+      &:before
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        background: url("../img/c-2.svg") no-repeat center
+          size: contain
+        width: 430px
+        height: 410px
+      &:nth-child(3)
+        bottom: auto
+        left: auto
+        width: 373px
+        height: 368px
+        right: 35px
+        top: 0
+        &:before
+          top: -14%
+          right: -14px
+          transform: rotate(-10deg)
+      &:nth-child(2)
+        bottom: auto
+        left: auto
+        width: 463px
+        height: 458px
+        right: 50%
+        top: 3%
+        &:before
+          width: 552px
+          height: 567px
+          right: -7%
+          top: -19%
+
+  .container
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+  h2
+    text-align: left
+    margin: 0 0 45px
+    z-index: 1
+    span
+      display: block
+
+
+.form
+  width: 496px
+  position: relative
+  z-index: 1
+  label
+    margin: 0 0 25px
+    input
+      height: 53px
+    textarea
+      height: 167px
+  button
+    padding: 10px
+    width: 173px
+    height: 61px
+    font-size: 16px
+  .explanation
+    margin: 18px 0 0 0
+    max-width: 358px
+    font-size: 14px
+    color: rgba(#434549, .6)
+    line-height: 23px
+    a
+      display: inline
+      color: rgba(#434549, .6)
+      text-decoration: underline
+      &:hover
+        color: $accent
+
+
+.border-blue
+  border: 2px solid $accent
+
+.checkbox
+  margin-bottom: 10px
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  &:last-child
+    margin-bottom: 0
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 21px
+    height: 21px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid #A0A0A0
+      radius: 3px
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+  .label
+    display: inline-block
+    vertical-align: middle
+    color: #000000
+    cursor: pointer
+  .checkbox-inp:checked + .checkbox-custom
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 4px
+      right: 0
+      bottom: 0
+      left: 0
+      margin: 0 auto
+      width: 13px
+      height: 9px
+      background: url("../img/check.svg") no-repeat center
+        size: contain

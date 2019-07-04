@@ -1,0 +1,725 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+//*::-webkit-input-placeholder
+//  color: #d4dae1
+//  opacity: 1
+//
+//*:-moz-placeholder
+//  color: #d4dae1
+//  opacity: 1
+//
+//*::-moz-placeholder
+//  color: #d4dae1
+//  opacity: 1
+//
+//*:-ms-input-placeholder
+//  color: #d4dae1
+//  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: $accent
+
+body input:required:valid,
+body textarea:required:valid
+  color: $accent
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+a
+  outline: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: "Gotham", sans-serif
+  color: #434549
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+
+input, textarea
+  outline: none
+  background: #FFFFFF
+  box-sizing: border-box
+  border-radius: 5px
+  border: 1px solid rgba(0, 0, 0, 0.2)
+  padding: 0 18px
+  width: 100%
+  font-size: 18px
+  color: #434549
+  font-family: 'Gotham', sans-serif
+  &::placeholder
+    color: #434549
+  &:focus
+    border: 2px solid #4A81ED
+    color: $accent
+    &::placeholder
+      color: $accent
+  &:valid
+    color: $accent
+
+textarea
+  padding: 14px 18px
+
+
+
+label
+  display: block
+
+.phone
+  font-size: 24px
+  color: #4A81ED
+  text-transform: uppercase
+
+
+.container
+  width: 100%
+  max-width: 1230px
+  padding: 0 15px
+  margin: 0 auto
+  position: relative
+  display: flex
+  flex-wrap: wrap
+
+button
+  outline: none
+  border: none
+  transition: .3s ease
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  box-sizing: border-box
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  box-sizing: border-box
+
+.btn-accent
+  color: #fff
+  box-shadow: 0 5px 20px rgba(255, 174, 59, 0.5)
+  background: #FFAE3B
+  border-radius: 99px
+  padding: 16px 26px
+  font-family: 'Gotham-m', sans-serif
+  &:hover
+    background: #FFAE3B
+    box-shadow: 0 5px 40px rgba(255, 174, 59, 0.75)
+  &:focus
+    background: #FD9400
+    box-shadow: none
+
+.btn-blue
+  font-family: 'Gotham-m', sans-serif
+  padding: 22px 46px
+  border-radius: 5px
+  background: $accent
+  color: #fff
+  &:hover
+    box-shadow: 0px 5px 20px rgba(74, 129, 237, 0.5)
+  &:focus
+    background: #316BDE
+
+.btn-accent-blue
+  background: #4A81ED
+  box-shadow: 0 5px 20px rgba(74, 129, 237, 0.5)
+  border-radius: 99px
+  padding: 21px 26px
+  font-family: 'Gotham-m', sans-serif
+  color: #fff
+  &:hover
+    box-shadow: 0 5px 40px rgba(74, 129, 237, 0.75)
+  &:focus
+    background: #316BDE
+    box-shadow: none
+
+
+.btn-border
+  font-family: 'Gotham-m', sans-serif
+  padding: 20px 41px
+  color: $accent
+  border: 2px solid $accent
+    radius: 5px
+  box-sizing: border-box
+  &:hover
+    background: #4A81ED
+    border-color: #4A81ED
+    color: #fff
+  &:focus
+    background: #316BDE
+    color: #fff
+    border-color: #316BDE
+
+.btn-green
+  background: #5FB452
+  box-shadow: 0 5px 20px rgba(95, 180, 82, 0.5)
+  padding: 21px 26px
+  font-family: 'Gotham-m', sans-serif
+  color: #fff
+  border-radius: 99px
+  &:hover
+    box-shadow: 0 5px 40px rgba(95, 180, 82, 0.75)
+  &:focus
+    background: #439A36
+    box-shadow: none
+
+.btn-red
+  box-shadow: 0 5px 20px rgba(227, 69, 95, 0.5)
+  background: #E3455F
+  padding: 21px 26px
+  font-family: 'Gotham-m', sans-serif
+  color: #fff
+  border-radius: 99px
+  &:hover
+    box-shadow: 0 5px 40px rgba(227, 69, 95, 0.75)
+  &:focus
+    background: #D6324D
+    box-shadow: none
+
+.bg-green
+  background: $green
+
+.bg-orange
+  background: #FFAE3B
+
+.text-green
+  color: $green
+
+.text-red
+  color: #D00C0C
+
+.text-blue
+  color: $accent
+
+.text-orange
+  color: #FFAE3B
+
+.btn-links
+  display: flex
+  align-items: center
+  font-family: 'Gotham-m', sans-serif
+  .text
+    margin: 0 14px
+  .icon
+    border-radius: 50%
+    width: 58px
+    min-width: 58px
+    height: 62px
+    display: flex
+    align-items: center
+    transition: .3s ease
+    justify-content: center
+  .icon-arrow
+    width: 23px
+    height: 13px
+    display: flex
+    align-items: center
+    justify-content: center
+    svg
+      width: 100%
+      height: 100%
+      display: inline-block
+
+.links-blue
+  .icon
+    box-shadow: 0 4px 25px rgba(74, 129, 237, 0.5)
+
+  &:hover
+    .icon
+      box-shadow: 0 4px 40px rgba(74, 129, 237, 0.75)
+  &:focus
+    .icon
+      box-shadow: none
+
+.links-green
+  .icon
+    box-shadow: 0 4px 25px rgba(95, 180, 82, 0.5)
+  .icon-arrow
+    svg
+      transform: rotate(180deg)
+      fill: $green
+      path
+        stroke: $green
+  &:hover
+    .icon
+      box-shadow: 0px 4px 40px rgba(95, 180, 82, 0.75)
+  &:focus
+    .icon
+      background: #5FB452
+      box-shadow: none
+
+
+.navigation
+  margin: 0 30px 0 auto
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+    a
+      text-transform: uppercase
+      font-size: 14px
+      letter-spacing: 0.5px
+      color: #434549
+      &:hover
+        color: $accent
+    a.current
+      color: $accent
+
+.bg-blue
+  background: $accent
+
+.bg-red
+  background: #E3455F
+
+.header-scroll
+  padding: 126px 0 0 0
+
+header
+  padding: 26px 0
+  position: relative
+  z-index: 2
+  .container
+    max-width: 1890px
+    justify-content: space-between
+    align-items: center
+  .btn
+    margin: 0 auto 0 0
+
+header.fixed
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 90
+  background: #fff
+  padding: 10px 0
+
+header.header-home2
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 90
+  .menu li a
+    color: #fff
+  .phone
+    color: #FFC200
+  .logo
+    path, .dots-logo
+      fill: #fff
+    .dots-logo-border, .figure-logo
+      fill: #4A81ED
+  &.fixed
+    background: #4A81ED
+
+footer
+  position: relative
+  z-index: 1
+  .container
+    max-width: 1890px
+    justify-content: space-between
+    align-items: center
+  .logo
+    .icon-logo, .dots-logo, path
+      fill: #fff
+    .figure-logo, .dots-logo-border
+      fill: $accent
+
+
+.footer-top, .footer-bottom
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .btn
+    margin: 0 auto 0 0
+  .phone
+    color: #fff
+  .menu
+    li
+      a
+        color: #fff
+        &:hover
+          color: rgba(#fff, .6)
+
+.links
+  text-decoration-line: underline
+  color: #fff
+  &:hover
+    text-decoration: none
+
+.footer-top
+  padding: 32px 0 0
+
+
+.footer-bottom
+  padding: 90px 0 42px
+  a
+    color: #fff
+
+.developer
+  display: flex
+  align-items: flex-end
+  .text
+    margin: 0 0 5px 5px
+
+.list-check
+  li
+    display: flex
+    align-items: center
+    font-size: 18px
+    margin: 0 0 12px
+    &:last-child
+      margin: 0
+    .icon
+      margin: 0 11px 0 0
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      width: 28px
+      height: 28px
+      min-width: 28px
+
+.yor-learn__content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 33px 0 0
+
+.yor-learn__box
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  margin: 0 auto 30px
+  max-width: 190px
+  .icon
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 71px
+    height: 75px
+    margin: 0 auto 16px
+  p
+    text-align: center
+    font-size: 18px
+    line-height: 24px
+
+.kit-composition
+  width: 100%
+  margin: 35px auto
+  .text
+    font-size: 18px
+    line-height: 32px
+    margin: 0 0 39px
+
+.list-kit
+  width: 100%
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: flex-start
+  display: flex
+  li
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+    background: #fff
+    border-radius: 10px
+    width: 270px
+    height: 150px
+    padding: 36px 40px 30px
+    margin: 0 0 30px
+    transition: .3s ease
+    cursor: pointer
+    &:hover
+      background: #5FB452
+      box-shadow: 0px 8px 35px rgba(95, 180, 82, 0.5)
+      p
+        color: #fff
+      span
+        color: #fff
+    p
+      font-size: 24px
+      font-family: 'Gotham-m', sans-serif
+    span
+      color: rgba(#434549, .6)
+
+
+.project-slider
+  width: 100%
+  max-width: 1200px
+  margin: 79px 0
+  background: #fff
+  border-radius: 10px
+  box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+  position: relative
+  .slick-arrow, .owl-nav button.owl-prev, .owl-nav button.owl-next
+    position: absolute
+    width: 40px
+    height: 23px
+    background: url("../img/arrow-slide.svg") no-repeat center
+      size: contain
+    top: 54px
+    transform: translate(0)
+    &:before
+      display: none
+    span
+      display: none
+    &:hover
+      opacity: .5
+  .slick-next
+    right: 43px
+  .slick-prev
+    right: 108px
+    left: auto
+    transform: rotate(180deg)
+  .owl-nav
+    button.owl-prev
+      right: 108px
+      left: auto
+      transform: rotate(180deg)
+    button.owl-next
+      right: 43px
+
+
+
+.project-box
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 45px 43px 31px 44px
+  .video-box
+    width: 376px
+    height: 376px
+    margin: 0
+  .text
+    width: calc(100% - 376px)
+    padding: 0 0 0 46px
+    box-sizing: border-box
+    h5
+      font-size: 24px
+      margin: 0 0 16px
+      font-family: 'Gotham-m', sans-serif
+    p
+      font-size: 18px
+      line-height: 30px
+
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+
+.buy-now-set
+  width: 100%
+  background: #fff
+  border-radius: 10px
+  box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+  min-height: 400px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  overflow: hidden
+  position: relative
+  .text-center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    z-index: 2
+    h6
+      text-align: center
+      font-size: 30px
+      max-width: 370px
+      line-height: 41px
+      span
+        display: block
+    .btn
+      width: 165px
+      margin: 28px auto 0
+  .image-left
+    position: absolute
+    left: -155px
+    top: -40px
+    &:before
+      content: ''
+      position: absolute
+      right: 8%
+      top: 8%
+      width: 365px
+      height: 365px
+      border-radius: 50%
+      background: rgba($accent, .1)
+    &:after
+      content: ''
+      position: absolute
+      right: -5%
+      top: 3%
+      background: url("../img/c-2.svg") no-repeat center
+        size: contain
+      width: 439px
+      height: 439px
+      transform: rotate(140deg)
+    .img
+      position: relative
+      z-index: 1
+      img
+        max-width: 474px
+      .icon
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        background: #fff
+        box-shadow: 0 4px 25px rgba(0, 28, 82, 0.5)
+        width: 35px
+        height: 35px
+        right: 27%
+        bottom: 48%
+        &:nth-child(2)
+          bottom: 22%
+          right: 42%
+        &:last-child
+          bottom: 57%
+          right: 38%
+  .image-right
+    position: absolute
+    right: -160px
+    bottom: -85px
+    &:before
+      content: ''
+      position: absolute
+      right: 40%
+      top: -10%
+      width: 365px
+      height: 365px
+      border-radius: 50%
+      background: rgba($accent, .1)
+    &:after
+      content: ''
+      position: absolute
+      right: 35%
+      top: -26%
+      background: url("../img/c-2.svg") no-repeat center
+        size: contain
+      width: 439px
+      height: 439px
+    .img
+      position: relative
+      z-index: 1
+      img
+        max-width: 516px
+    .icon
+      z-index: 1
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      background: #fff
+      box-shadow: 0 4px 25px rgba(0, 28, 82, 0.5)
+      width: 35px
+      height: 35px
+      bottom: 37%
+      left: 20%
+      svg
+        fill: $accent
+        path
+          fill: $accent
+      &:nth-child(3)
+        bottom: 26%
+        left: 40%
+      &:nth-child(4)
+        bottom: 49%
+        left: 49%
+      &:nth-child(5)
+        bottom: 73%
+        left: 16%
+      &:last-child
+        bottom: 82%
+        left: 34%
+
+.w-100
+  width: 100%
+
+
+
+
+@import "../components/pages/order/style"
+@import "../components/pages/home2/style"
+@import "../components/pages/educational-institutions/style"
+@import "../components/pages/about/style"
+@import "../components/pages/successfully/style"
+@import "../components/pages/not-successful/style"
+@import "../components/pages/404/style"
+@import "../components/pages/blog/style"
+@import "../components/pages/home/style"
+@import "modal"
+@import "media"
+// Всегда в конце

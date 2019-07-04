@@ -1,0 +1,72 @@
+<svg width="96" height="82" viewBox="0 0 96 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.2002 79.2L20.7002 77L29.7002 79.5L15.3002 81.6L6.2002 79.2Z" fill="url(#id1)"/>
+    <path d="M20.7002 76.9999L26.3002 58.8999L35.3002 61.7999L29.7002 79.4999L20.7002 76.9999Z"
+          fill="url(#id2)"/>
+    <path d="M26.2998 58.9L41.5998 56.2L50.3998 59.2L35.2998 61.8L26.2998 58.9Z" fill="url(#id3)"/>
+    <path d="M41.5996 56.2001L47.4996 37.6001L56.2996 41.0001L50.3996 59.2001L41.5996 56.2001Z"
+          fill="url(#id4)"/>
+    <path d="M47.5 37.5999L63.6 34.3999L72.2 37.8999L56.3 40.9999L47.5 37.5999Z" fill="url(#id5)"/>
+    <path d="M63.5996 34.4001L69.7996 15.1001L78.2996 19.0001L72.1996 37.9001L63.5996 34.4001Z"
+          fill="url(#id6)"/>
+    <path d="M95.0996 15.5L86.7996 11.4L79.0996 0L87.4996 4.3L95.0996 15.5Z" fill="url(#id7)"/>
+    <path d="M69.7998 15.0999L86.7998 11.3999L95.0998 15.4999L78.2998 18.9999L69.7998 15.0999Z"
+          fill="url(#id8)"/>
+    <path d="M79.1 0L62.4 3.9L56.3 23.1L40.6 26.4L34.7 45L19.8 47.8L14.2 65.8L0 68.2L6.2 79.2L20.7 77L26.3 58.9L41.6 56.2L47.5 37.6L63.6 34.4L69.8 15.1L86.8 11.4L79.1 0Z"
+          fill="url(#id9)"/>
+    <defs>
+        <linearGradient id="id1" x1="12.0113" y1="80.9564" x2="27.234" y2="76.7702"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#90ED75"/>
+            <stop offset="0.3746" stop-color="#84DA6B"/>
+            <stop offset="1" stop-color="#72BD5B"/>
+        </linearGradient>
+        <linearGradient id="id2" x1="26.3117" y1="77.159" x2="29.8317" y2="60.6054"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#73DB55"/>
+            <stop offset="0.4736" stop-color="#6ABE51"/>
+            <stop offset="1" stop-color="#61A14D"/>
+        </linearGradient>
+        <linearGradient id="id3" x1="32.9368" y1="60.1193" x2="45.5905" y2="57.6456"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#90ED75"/>
+            <stop offset="0.3746" stop-color="#84DA6B"/>
+            <stop offset="1" stop-color="#72BD5B"/>
+        </linearGradient>
+        <linearGradient id="id4" x1="46.1375" y1="57.3186" x2="51.6556" y2="39.9081"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#73DB55"/>
+            <stop offset="0.4736" stop-color="#6ABE51"/>
+            <stop offset="1" stop-color="#61A14D"/>
+        </linearGradient>
+        <linearGradient id="id5" x1="54.6254" y1="39.2858" x2="69.3721" y2="34.9093"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#90ED75"/>
+            <stop offset="0.3746" stop-color="#84DA6B"/>
+            <stop offset="1" stop-color="#72BD5B"/>
+        </linearGradient>
+        <linearGradient id="id6" x1="69.3891" y1="36.1811" x2="72.3384" y2="18.1998"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#73DB55"/>
+            <stop offset="0.4736" stop-color="#6ABE51"/>
+            <stop offset="1" stop-color="#61A14D"/>
+        </linearGradient>
+        <linearGradient id="id7" x1="91.6825" y1="13.5233" x2="83.7857" y2="3.6285"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#73DB55"/>
+            <stop offset="0.4736" stop-color="#6ABE51"/>
+            <stop offset="1" stop-color="#61A14D"/>
+        </linearGradient>
+        <linearGradient id="id8" x1="76.5305" y1="18.344" x2="88.3278" y2="12.255"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#90ED75"/>
+            <stop offset="0.3746" stop-color="#84DA6B"/>
+            <stop offset="1" stop-color="#72BD5B"/>
+        </linearGradient>
+        <linearGradient id="id9" x1="8.0885" y1="72.648" x2="90.289" y2="-6.50811"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C3FF8F"/>
+            <stop offset="0.5546" stop-color="#9AE376"/>
+            <stop offset="1" stop-color="#7DCF64"/>
+        </linearGradient>
+    </defs>
+</svg>

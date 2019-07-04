@@ -1,0 +1,279 @@
+.checkout
+  padding: 80px 0 113px
+
+.stages-checkout
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 80px
+  .number-stages.check
+    .number
+      background: #fff
+      border-color: $accent
+      svg
+        display: block
+      p
+        display: none
+    p
+      color: $accent
+
+      font-family: 'Gotham-m', sans-serif
+  .number-stages.active
+    .number
+      background: $accent
+      color: #fff
+  .number-stages
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    margin: 0 25px
+    width: 180px
+    &:last-child
+      &:before
+        display: none
+    &:before
+      content: ''
+      position: absolute
+      left: 100px
+      top: 27px
+      background: url("../img/dots-line.svg") no-repeat center
+        size: contain
+      width: 155px
+      height: 5px
+    .number
+      border: 2px solid transparent
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      background: rgba($accent, .2)
+      letter-spacing: -0.5px
+      font-size: 20px
+      color: $accent
+      width: 60px
+      height: 60px
+      margin: 0 0 20px
+      svg
+        display: none
+        //fill: $accent
+        width: 24px
+        height: 18px
+        path
+          stroke: $accent
+    p
+      text-align: center
+
+.checkout-content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  .left-box
+    width: 496px
+
+.checkout-stages.active
+  display: flex
+    
+.checkout-stages
+  display: none
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 100%
+  h2
+    text-align: left
+    margin: 0 0 26px
+  h6
+    color: rgba(#434549, .6)
+    margin: 0 0 67px
+    font-family: 'Gotham-m', sans-serif
+  .box-delivery
+    margin: 37px 0
+    input
+      padding: 0 180px 0 18px
+  .box-delivery, .box-payment
+    label
+      position: relative
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+    .delivery-date
+      min-width: 100px
+      margin: 0 30px 0 auto
+  .box-payment
+    margin: 40px 0
+  .button-group
+    width: 100%
+    justify-content: space-between
+    display: flex
+    align-items: center
+    .links-prev
+      color: #434549
+      display: flex
+      align-items: center
+      &:hover
+        color: $accent
+      .icon
+        width: 23px
+        height: 13px
+        margin: 0 15px 0 0
+        svg
+          width: 100%
+          height: 100%
+          transform: rotate(180deg)
+  .info-orders
+    .box
+      margin: 0 0 22px
+      h6
+        margin: 0 0 5px
+        font-family: 'Gotham-m', sans-serif
+        color: $accent
+      p
+        font-size: 20px
+
+.info-orders-delivery
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 40px 0 0
+  text-align: center
+
+  h5
+    text-align: center
+    margin: 26px 0 10px
+    font-size: 20px
+    font-family: 'Gotham-m', sans-serif
+  p
+    text-align: center
+    margin: 0 0 10px
+
+.info-orders-delivery__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 230px
+  background: #fff
+  border-radius: 10px
+  border: 2px solid #4A81ED
+  box-shadow: 0px 8px 35px rgba(8, 60, 164, 0.15)
+  height: 230px
+  padding: 27px 10px 26px
+
+
+.checkout-stages-two
+  .selected-product
+    .selected-product__info
+      h4
+        width: 100%
+        text-align: center
+
+
+.order-price
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 54px 0 52px
+  p
+    font-size: 30px
+    margin: 0 20px 0 0
+  .price
+    display: flex
+    align-items: center
+    flex-direction: row
+    .old-price
+      margin: 0 10px 0 0
+      
+      
+.selected-product
+  display: flex
+  flex-direction: column
+  width: 574px
+  .image-product
+    width: 100%
+    height: 574px
+    border-radius: 10px
+    overflow: hidden
+    background: #fff
+    box-shadow: 0px 8px 35px rgba(8, 60, 164, 0.15)
+    padding: 2px
+    position: relative
+    margin: 0 0 25px
+    .name-module
+      position: absolute
+      top: 33px
+      right: 44px
+      font-size: 14px
+      span
+        font-family: 'Gotham-m', sans-serif
+        font-size: 27px
+    .img
+      background: linear-gradient(0deg, #E2F5DF, #E2F5DF)
+      display: flex
+      justify-content: flex-end
+      align-items: flex-end
+      border-radius: 10px
+      height: 100%
+      padding: 0 0 58px
+      img
+        max-width: 520px
+        margin: 0 0 0 auto
+  .selected-product__info
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    h4
+      font-size: 30px
+      font-family: 'Gotham-m', sans-serif
+    label
+      display: flex
+      align-items: center
+      input
+        width: 53px
+        height: 53px
+        color: $accent
+        padding: 0
+        text-align: center
+        font-size: 18px
+        font-family: 'Gotham-m', sans-serif
+        margin: 0 18px 0 0
+        &::placeholder
+          color: $accent
+
+.content-page-order
+  .equipment
+    padding: 103px 0 112px
+    background: #E0EAFD
+    .container
+      flex-direction: column
+    h2
+      max-width: none
+      span
+        display: inline-block
+    .equipment-content
+      justify-content: center
+    .equipment-box
+      margin: 0 15px 55px
+    .description
+      margin: 0 auto 27px
+      text-align: center
+      max-width: 771px
+      color: rgba(#434549, .6)
+      font-size: 18px
+    .line-contacts
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-wrap: wrap
+      a
+        text-transform: none
+        font-size: 24px
+        margin: 0 10px

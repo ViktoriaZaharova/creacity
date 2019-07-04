@@ -1,0 +1,1902 @@
+h1
+  color: #434549
+  letter-spacing: -0.5px
+  font-size: 43px
+  font-family: 'Gotham-b', sans-serif
+
+h2
+  text-align: center
+  font-size: 44px
+  margin: 0 auto 70px
+  letter-spacing: -0.5px
+  color: #434549
+  .img
+    svg
+      display: inline-block
+      margin: 0 0 -5px
+
+.button-group, .icon-group
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  position: relative
+  z-index: 2
+
+.age
+  display: inline-flex
+  align-items: flex-end
+  justify-content: center
+  background: #D5E3FF
+  border-radius: 30px
+  width: 103px
+  min-width: 103px
+  height: 36px
+  font-size: 24px
+  font-family: 'Gotham-b', sans-serif
+  color: $accent
+  span
+    font-size: 14px
+    font-family: 'Gotham', sans-serif
+
+main
+  padding: 140px 0 100px
+  position: relative
+  .container
+    flex-direction: column
+    align-items: flex-start
+  h1
+    max-width: 700px
+    z-index: 2
+    position: relative
+  .description
+    z-index: 2
+    position: relative
+    margin: 34px 0 47px
+    max-width: 545px
+    color: rgba(#434549, .6)
+    line-height: 27px
+    font-size: 18px
+  .btn-border
+    margin: 0 0 0 35px
+  .icon-group
+    z-index: 2
+    position: relative
+    margin: 148px 0 73px
+    li
+      display: flex
+      align-items: center
+      margin: 0 45px 0 0
+      cursor: pointer
+      &:hover
+        .icon
+          box-shadow: 4px 8px 25px rgba(95, 180, 82, 0.5)
+      &:last-child
+        margin: 0
+      p
+        max-width: 158px
+        font-size: 12px
+        line-height: 18px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        font-family: 'Gotham-b', sans-serif
+      .icon
+        transition: .3s ease
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        width: 60px
+        height: 60px
+        min-width: 60px
+        margin: 0 14px 0 0
+.arrow-btn
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  z-index: 2
+  animation: animateBtn .7s linear alternate infinite
+  transition: .3s ease
+  svg
+    fill: $accent
+    width: 25px
+    height: 15px
+    path
+      stroke: $accent
+
+
+@keyframes animateBtn
+  100%
+    transform: translate(0, 10px)
+
+
+strong
+  font-family: 'Gotham-m', sans-serif
+
+.image-interactive
+  position: absolute
+  right: -357px
+  top: -120px
+  .img
+    max-width: 1575px
+
+  .text-description
+    left: 44%
+    bottom: 5%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    position: absolute
+    max-width: 200px
+    h6
+      color: $accent
+      font-size: 24px
+    p
+      color: rgba(#191C1F, .6)
+      font-size: 14px
+
+.text-description__box
+  display: none
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+
+.text-description__box.active
+  display: flex
+
+
+.kit-available
+  width: 158px
+  top: 20%
+  left: 28%
+  position: absolute
+  z-index: 2
+  text-align: right
+  .number
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    font-size: 18px
+    p
+      font-size: 12px
+      margin: 0 5px
+      color: #000
+  p
+    color: rgba(#434549, .6)
+  .line-available
+    margin: 7px 0 0 0
+    width: 100%
+    background: linear-gradient(0deg, #DEE1E2 21.59%, #D2D2D2 97.56%)
+    height: 14px
+    border-radius: 15px
+  .slider-color
+    background: linear-gradient(270deg, #CC0000 0.9%, #FC9595 123.66%)
+    width: 36px
+    height: 100%
+    border-radius: 15px
+    float: right
+    position: relative
+    overflow: hidden
+    span
+      top: -2px
+      right: 8px
+      position: absolute
+      background: #FFFFFF
+      opacity: .22
+      width: 6px
+      height: 19px
+      transform: rotate(15deg)
+      &:nth-child(1)
+        left: 8px
+        right: auto
+
+.interactive-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  width: 37px
+  height: 37px
+  min-width: 37px
+  position: absolute
+  background: #FFFFFF
+  box-shadow: 0 4px 25px rgba(0, 28, 82, 0.5)
+  svg
+    fill: $accent
+    path
+      fill: $accent
+  &:hover
+    background: $accent
+    box-shadow: none
+    svg
+      fill: #fff
+      transition: .3s ease
+      path
+        fill: #fff
+  &:first-child
+    left: 23%
+    bottom: 13%
+  &:nth-child(2)
+    left: 33%
+    bottom: 20%
+  &:nth-child(3)
+    left: 25%
+    bottom: 30%
+  &:nth-child(4)
+    left: 47%
+    bottom: 37%
+  &:nth-child(5)
+    bottom: 30%
+    left: 53%
+  &:nth-child(6)
+    bottom: 31%
+    left: 64%
+  &:nth-child(7)
+    bottom: 47%
+    left: 51%
+  &:nth-child(8)
+    bottom: 57%
+    left: 32%
+
+.for-whom
+  padding: 0 0 434px
+  margin: 0 0 -306px
+  position: relative
+  .container
+    z-index: 2
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    opacity: .2
+    background: linear-gradient(180deg, #FFFFFF 0%, #E7EEFD 14.09%, rgba(25, 98, 241, 0.7) 44.87%, rgba(255, 255, 255, 0.7) 98.51%)
+  h2
+    max-width: 535px
+    line-height: 50px
+
+
+.section-content
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+
+.for-whom__box.open
+  .for-whom__box-wrapper
+    max-height: none
+    &:before
+      width: 0
+
+.for-whom__box
+  cursor: pointer
+  margin: 0 0 35px
+  width: 585px
+  box-shadow: 0 8px 35px rgba(0, 66, 197, 0.15)
+  border-radius: 10px
+  position: relative
+  .for-whom__box-wrapper
+    border-radius: 10px
+    background: #fff
+    padding: 49px 44px 50px 56px
+    overflow: hidden
+    max-height: 410px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 83px
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFFFFF 100%)
+    h3
+      width: 100%
+      text-align: center
+      color: #4A81ED
+      margin: 0 auto 37px
+      font-size: 30px
+      font-family: 'Gotham-m', sans-serif
+      letter-spacing: -0.5px
+    .list-dots
+      margin: 0 0 33px
+    h6
+      margin: 0 0 33px
+    .btn
+      width: 181px
+      margin: 30px auto 0
+  &:nth-child(1)
+    .figure-icon
+      left: -85px
+      top: -37px
+  &:nth-child(2)
+    .figure-icon
+      left: auto
+      right: -11px
+      top: 45px
+      width: 117px
+      height: 139px
+  &:nth-child(3)
+    .figure-icon:nth-child(1)
+      left: -48px
+      top: 50px
+      width: 95px
+      height: 81px
+    .figure-icon:nth-child(2)
+      left: auto
+      right: 62px
+      top: auto
+      bottom: -53px
+      width: 159px
+      height: 152px
+  &:nth-child(4)
+    .figure-icon:nth-child(1)
+      bottom: -23px
+      top: auto
+      left: 86px
+      width: 106px
+      height: 105px
+    .figure-icon:nth-child(2)
+      right: 0
+      left: auto
+      top: 132px
+      width: 99px
+      height: 72px
+
+
+.list-dots
+  li
+    position: relative
+    padding: 0 0 0 30px
+    line-height: 27px
+    font-size: 18px
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 5px
+      background: #4A81ED
+      width: 12px
+      height: 12px
+      border-radius: 50%
+
+.result-box
+  display: flex
+  align-items: center
+  margin: 0 0 22px
+  .icon
+    margin: 0 22px 0 0
+    width: 65px
+    min-width: 65px
+  .text
+    h4
+      color: $accent
+      font-size: 20px
+      font-family: 'Gotham-b', sans-serif
+      margin: 0 0 5px
+    p
+      color: rgba(#434549, .6)
+      line-height: 20px
+      min-height: 60px
+      font-family: 'Gotham-m', sans-serif
+
+.figure-icon
+  position: absolute
+  z-index: 2
+  width: 126px
+  height: 120px
+  top: 0
+  left: 0
+
+.title
+  width: 100%
+  text-align: center
+
+.rating
+  display: flex
+  align-items: center
+  li
+    width: 32px
+    height: 30px
+    margin: 0 6px 0 0
+    &:last-child
+      margin: 0
+    svg
+      width: 100%
+      height: 100%
+
+.icon-disable
+  svg
+    opacity: .15
+
+.icon-grey
+  svg
+    path
+      &:nth-child(2)
+        fill: #DADDE6
+      &:nth-child(1)
+        fill: #BDC2D0
+
+.list-stages
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  position: relative
+  h6
+    margin: 14px 0 5px
+    font-size: 20px
+    display: flex
+    align-items: center
+  p
+    color: rgba(#434549, .6)
+  .box
+    flex: 1
+  .icon-arrow
+    margin: 0 0 0 10px
+    svg
+      fill: #434549
+      path
+        fill: #434549
+        stroke: #434549
+        stroke-width: 1px
+
+
+.how-it-work__slider
+  margin: 0 0 0 22%
+  box-sizing: border-box
+  width: 100%
+
+
+.how-it-work__box
+  min-height: 723px
+  border-radius: 10px
+  background: #fff
+  box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+  width: 615px
+  padding: 43px 40px 47px
+  box-sizing: border-box
+  margin: 40px auto
+  .image
+    margin: 51px auto 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 359px
+    overflow: hidden
+  .stages-name
+    display: flex
+    align-items: center
+    .number
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      background: #4A81ED
+      color: #fff
+      width: 60px
+      height: 60px
+      min-width: 60px
+      font-size: 20px
+      text-align: center
+      font-family: 'Gotham-m', sans-serif
+      margin: 0 14px 0 0
+    p
+      font-size: 27px
+      letter-spacing: -0.5px
+      line-height: 30px
+      strong
+        color: $accent
+
+
+.how-it-work
+  position: relative
+  z-index: 2
+  padding: 0 0 175px
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    left: -256px
+    bottom: -158px
+    width: 1152px
+    height: 788px
+    background: url("../img/6.png") no-repeat center
+      size: contain
+  h2
+    margin: 0 auto 30px
+
+.slick-slide
+  outline: none
+
+.list-stars
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 14px
+    letter-spacing: -0.5px
+    font-size: 20px
+    &:last-child
+      margin: 0
+    .icon
+      margin: 0 19px 0 0
+      svg
+        path
+          &:nth-child(2)
+            fill: #FFDA44
+          &:nth-child(1)
+            fill: #FFCD00
+
+.how-it-work-arrow, .reviews-arrow
+  position: absolute
+  right: 15px
+  top: 10px
+  display: flex
+  align-items: center
+  .slick-arrow
+    left: 0
+    right: 0
+    transform: none
+    top: 0
+    position: relative
+    width: 40px
+    height: 23px
+    background: url("../img/arrow-slide.svg") no-repeat center
+      size: contain
+    &:before
+      display: none
+  .slick-prev
+    transform: rotate(180deg)
+    margin: 0 25px 0 0
+  .slick-disabled
+    opacity: .5
+
+.reviews-arrow
+  .slick-arrow
+    &:hover
+      opacity: .5
+
+.slick-arrow
+  z-index: 2
+
+.online-platform
+  padding: 131px 0 124px
+  background: url('../img/pattern.svg') #DDE8FE no-repeat center
+    size: cover
+
+
+.img-screen
+  position: relative
+  width: 861px
+  margin: 0 auto
+  .figure-icon
+    left: 0
+    top: -60%
+
+.online-platform-content
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+  justify-content: center
+
+.box-subscribe
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  box-sizing: border-box
+  background: #fff
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translate(0,-50%)
+  z-index: 2
+  width: 302px
+  box-shadow: 4px 10px 65px rgba(0, 54, 162, 0.2)
+  border-radius: 10px
+  padding: 12px 32px 39px
+  .icon
+    display: flex
+    align-items: center
+    justify-content: center
+    background: url("../img/polygon.svg") no-repeat center
+      size: cover
+    width: 100px
+    height: 100px
+  h4, h6
+    text-align: center
+    font-size: 22px
+    font-family: 'Gotham-b', sans-serif
+    line-height: 26px
+  h6
+    color: $green
+  p
+    text-align: center
+    color: rgba(#434549, .6)
+    margin: 17px 0 18px
+
+.personal-tutor
+  margin: 89px auto 0
+  display: flex
+  align-items: center
+  .icon
+    box-shadow: 0 4px 20px rgba(8, 18, 38, 0.15)
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 112px
+    height: 112px
+    min-width: 112px
+    background: #fff
+    padding: 10px
+    border: 1px solid $green
+    margin: 0 44px 0 0
+  .text
+    max-width: 457px
+    font-size: 18px
+    line-height: 27px
+    h3
+      font-size: 30px
+      font-family: 'Gotham-b', sans-serif
+      margin: 0 0 10px
+      letter-spacing: -0.5px
+      line-height: 34px
+      color: $accent
+    a
+      display: inline
+      color: $accent
+      font-family: 'Gotham-b', sans-serif
+
+.question-box
+  display: flex
+  align-items: center
+  background: #fff
+  border-radius: 30px
+  height: 54px
+  transition: .3s ease
+  &:hover
+    box-shadow: 4px 4px 25px rgba(0, 37, 111, 0.2)
+    .text
+      padding: 16px 21px
+      width: auto
+      opacity: 1
+      pointer-events: auto
+  .icon
+    cursor: pointer
+    font-size: 27px
+    color: $accent
+    font-family: 'Gotham-m', sans-serif
+    letter-spacing: -0.5px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    width: 54px
+    height: 54px
+    min-width: 54px
+    box-shadow: 0 4px 25px rgba(0, 37, 111, 0.2)
+  .text
+    font-size: 22px
+    opacity: 0
+    letter-spacing: -0.5px
+    width: 0
+    pointer-events: none
+    transition: .3s ease
+
+.what-to-do__content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.video-box
+  overflow: hidden
+  width: 49%
+  height: 727px
+  position: relative
+  box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+  border-radius: 10px
+  margin: 0 0 40px
+  .question-box
+    position: absolute
+    right: 32px
+    top: 25px
+    flex-direction: row-reverse
+    z-index: 2
+  &:nth-child(even)
+    .question-box
+      flex-direction: row
+      right: auto
+      left: 32px
+  .video
+    position: relative
+    width: 100%
+    height: 100%
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      transform: scale(1.7)
+    iframe, video
+      width: 100%
+      height: 100%
+    &:hover
+      &:before
+        opacity: 0
+        visibility: hidden
+      .play
+        opacity: 0
+        visibility: hidden
+
+.video-box.video-box__play
+  .video
+    .play
+      z-index: 2
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      transition: .3s ease
+    //&:before
+    //  content: ''
+    //  transition: .3s ease
+    //  position: absolute
+    //  left: 0
+    //  top: 0
+    //  width: 100%
+    //  height: 100%
+    //  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    //  z-index: 1
+
+
+
+.what-to-do
+  padding: 129px 0 114px
+
+.collect
+  background: #4A81ED
+  padding: 124px 0 173px
+  overflow: hidden
+  color: #fff
+  h2
+    color: #fff
+  h6
+    position: absolute
+    margin: 0 auto
+    font-size: 40px
+    letter-spacing: -0.5px
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    text-align: center
+    span
+      color: $accent2
+      margin: 0 0 0 10px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        right: -65px
+        bottom: 0
+        width: 54px
+        height: 54px
+        background: url("../img/fire.png") no-repeat center
+          size: contain
+
+
+.collect-content
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 31px 108px
+
+
+.collect-box
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  //margin: 0 87px 0 0
+  .border
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 446px
+    height: 446px
+    border-radius: 50%
+    background: url("../img/circle-dot.svg") no-repeat center
+      size: cover
+    .circle
+      position: absolute
+      width: 29.9px
+      height: 29.9px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 0.5px solid #FFFFFF
+      box-shadow: 0 8px 35px rgba(67, 69, 73, 0.12)
+      transform: matrix(-1, 0, 0, 1, 0, 0)
+      box-sizing: border-box
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        border-radius: 50%
+        width: 4.27px
+        height: 4.27px
+        background: #fff
+      &:nth-child(1)
+        left: 14%
+        top: 9%
+      &:nth-child(2)
+        top: 9%
+        right: 14.5%
+      &:nth-child(3)
+        right: -4px
+        top: 33.5%
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+    width: 436px
+    height: 436px
+    background: rgba(#fff, .2)
+  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 50%
+    background: rgba(#fff, .3)
+    width: 304px
+    height: 304px
+  .number
+    position: absolute
+    z-index: 2
+    left: 0
+    top: 0
+    width: 102px
+    min-width: 102px
+    height: 102px
+    background: transparent
+    border: 1px solid rgba(#FFFFFF, .35)
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 20px
+    color: #4A81ED
+    font-family: 'Gotham-b', sans-serif
+    letter-spacing: -0.5px
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      background: rgba(255, 255, 255, 0.35)
+      border: 1px solid rgba(#FFFFFF, .5)
+      width: 70px
+      height: 70px
+      border-radius: 50%
+    &:after
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      background: #FFFFFF
+      width: 60px
+      height: 60px
+      border-radius: 50%
+    p
+      z-index: 1
+      line-height: 14px
+  .module
+    position: absolute
+    bottom: 0
+    right: 0
+    display: flex
+    align-items: flex-end
+    font-size: 18px
+    z-index: 2
+    p
+      font-size: 37px
+      font-family: 'Gotham-m', sans-serif
+      margin: 0 5px 0 0
+      line-height: 27px
+  .image
+    position: relative
+    z-index: 1
+    max-width: 501px
+    display: flex
+    align-items: center
+    justify-content: center
+  &:nth-child(1)
+    margin: 100px 0 0 0
+    width: 501px
+    &:before, &:after, .border
+      top: 40%
+    .number
+      left: 50%
+      top: -34%
+      transform: translate(-50%,0)
+    .module
+      bottom: 14%
+      right: 20%
+    .arrow
+      left: 92%
+      top: 20%
+
+  &:nth-child(2)
+    margin: 0 -70px 0 87px
+    width: 688px
+    &:after
+      display: none
+    &:before
+      width: 512px
+      height: 512px
+      left: 0
+      transform: translate(0,-50%)
+    .image
+      max-width: 688px
+    .number
+      top: auto
+      bottom: -14%
+      left: 38%
+    .module
+      top: 0
+      right: 30%
+      bottom: auto
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+      p
+        display: block
+        margin: 0 0 5px
+    .arrow
+      right: 13%
+      top: 35%
+  &:nth-child(3)
+    width: 909px
+    margin: 0 -283px 0 0
+    &:after
+      display: none
+    &:before
+      width: 631px
+      height: 631px
+      left: 42%
+    .image
+      max-width: 909px
+    .number
+      left: 10%
+      top: 16%
+    .module
+      top: 50px
+      left: 20%
+      right: auto
+      bottom: auto
+      &:last-child
+        top: auto
+        bottom: 16%
+        left: 13%
+
+.arrow
+  position: absolute
+  display: flex
+  align-items: center
+  //z-index: 1
+  .line-dots
+    display: flex
+    align-items: center
+    justify-content: center
+    span
+      display: inline-block
+      width: 5.03px
+      height: 5.03px
+      opacity: .3
+      background: #fff
+      border-radius: 50%
+      margin: 0 9.97px 0 0
+      &:last-child
+        opacity: 1
+      &:nth-child(2)
+        opacity: 0.4
+      &:nth-child(5)
+        opacity: 0.5
+      &:nth-child(6)
+        opacity: .6
+      &:nth-child(7)
+        opacity: .7
+      &:nth-child(8)
+        opacity: .8
+      &:nth-child(9)
+        opacity: .9
+  .icon
+    width: 32px
+    height: 32px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #FFFFFF
+      radius: 50%
+
+
+.equipment
+  padding: 133px 0 0
+  position: relative
+  z-index: 1
+  h2
+    text-align: center
+    width: 100%
+    margin: 0 auto 60px
+    span
+      display: block
+      color: $accent
+  .container
+    z-index: 1
+
+.equipment-content
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  align-items: flex-start
+  justify-content: space-between
+
+.equipment-box.box-green
+  .image
+    background: linear-gradient(0deg, #E2F5DF, #E2F5DF)
+  .box-attention
+    box-shadow: 0 8px 35px rgba(44, 140, 29, 0.25)
+
+.equipment-box.box-blue
+  .image
+    background: #E4ECFC
+  .box-attention
+    box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+
+.equipment-box.box-red
+  .image
+    background: linear-gradient(0deg, #FFE7EB, #FFE7EB)
+  .box-attention
+    font-size: 10px
+    box-shadow: 0px 8px 35px rgba(147, 13, 35, 0.25)
+    line-height: 16px
+
+.equipment-box
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F0FFEE
+  box-shadow: 0 8px 25px rgba(0, 22, 66, 0.15)
+  border-radius: 10px
+  box-sizing: border-box
+  width: 380px
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 3px 2px
+  margin: 0 0 76px
+  .image
+    height: 375px
+    display: flex
+    align-items: flex-end
+    justify-content: flex-end
+    width: 100%
+    border-radius: 10px 10px 0 0
+    overflow: hidden
+    position: relative
+    padding: 0 0 39px
+    box-sizing: border-box
+    img
+      max-width: 346px
+      left: 60%
+      top: 54%
+      + img
+          left: -100%
+    .name-module
+      position: absolute
+      font-size: 20px
+      top: 25px
+      right: 33px
+      span
+        font-size: 27px
+        font-family: 'Gotham-m', sans-serif
+  .text
+    padding: 32px 22px
+  .name
+    color: #434549
+    font-size: 27px
+    letter-spacing: -0.5px
+    font-family: 'Gotham-m', sans-serif
+  .list
+    margin: 24px 0 0
+    li
+      font-size: 16px
+      margin: 0 0 14px
+      line-height: 20px
+      span
+        font-family: 'Gotham-b', sans-serif
+        font-size: 20px
+  .line
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 47px 0 0 0
+  .btn
+    width: 165px
+  .top-label
+    width: 100%
+    color: #fff
+    border-radius: 10px 10px 0 0
+    text-align: center
+    padding: 15px
+    text-transform: uppercase
+    font-family: 'Gotham-m', sans-serif
+    p
+      margin: 5px 0 0
+      font-size: 10px
+
+
+.price
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  font-family: 'Gotham-m', sans-serif
+  .old-price
+    text-decoration-line: line-through
+  .new-price
+    font-size: 27px
+    letter-spacing: -0.5px
+
+
+.btn-details
+  width: fit-content
+  border-bottom: 1px dotted #4A81ED
+  color: #4A81ED
+  padding: 0 0 5px
+
+.box-attention
+  z-index: 1
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  width: 108px
+  height: 108px
+  border-radius: 50%
+  color: #fff
+  text-transform: uppercase
+  font-size: 16px
+  text-align: center
+  font-family: 'Gotham-m', sans-serif
+  left: -19px
+  top: -19px
+
+//additional-information section
+.additional-information
+  position: relative
+  z-index: 1
+  .container
+    align-items: stretch
+    justify-content: space-between
+    .figure-icon
+      &:nth-child(1)
+        top: -400%
+        left: -44px
+      &:nth-child(2)
+        top: -380%
+        left: auto
+        right: -72px
+        bottom: auto
+      &:nth-child(3)
+        right: -130px
+        left: auto
+        top: -350%
+      &:nth-child(4)
+        top: -355%
+        left: auto
+        right: 16px
+
+.additional-information__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  background: #fff
+  box-shadow: 0 8px 35px rgba(19, 88, 226, 0.15)
+  border-radius: 10px
+  width: 585px
+  padding: 59px 37px 53px
+  margin: 0 0 57px
+  h3
+    width: 100%
+    text-align: center
+    font-size: 40px
+    margin: 0 auto 40px
+    font-family: 'Gotham', sans-serif
+  .list
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: space-between
+    li
+      width: 152px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      .icon
+        height: 76px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 auto 26px
+      h4
+        text-align: center
+        font-size: 20px
+        font-family:  'Gotham-m', sans-serif
+      p, span
+        text-align: center
+      p
+        margin: 10px auto 5px
+
+.payment-info-box
+  .list
+    justify-content: space-around
+    li
+      width: auto
+      .icon
+        height: 86px
+
+//section reviews
+.reviews
+  padding: 100px 0
+  position: relative
+  z-index: 1
+  h2
+    margin: 0 auto
+  .btn
+    margin: 0 auto
+    width: 250px
+
+.reviews-box
+  margin: 60px 31px
+  width: 812px
+  background: #fff
+  box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+  border-radius: 10px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 31px
+  .image-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 357px
+    .img-max
+      border-radius: 10px
+      overflow: hidden
+      width: 357px
+      height: 326px
+      position: relative
+      margin: 0 0 20px 0
+      display: flex
+      align-items: flex-end
+      justify-content: flex-end
+      &:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background: url("../img/overlay.png") no-repeat center
+          size: cover
+        filter: blur(10px)
+        left: 0
+        top: 0
+      img
+        position: relative
+        z-index: 1
+        transform: scale(1.6)
+  .img-min
+    width: 169px
+    height: 170px
+    border-radius: 10px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    position: relative
+    img
+      transform: scale(2.5)
+      position: absolute
+      right: -70px
+      bottom: 0
+  .img-min-wrap
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .text-wrapper
+    padding: 0 0 0 35px
+    width: calc(100% - 357px)
+    .name-user
+      display: flex
+      align-items: center
+      margin: 0 0 24px
+      .photo
+        border-radius: 50%
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        width: 70px
+        height: 70px
+        margin: 0 24px 0 0
+        img
+          transform: scale(4)
+          position: absolute
+          right: 60%
+          top: 73%
+      .name
+        font-size: 18px
+        font-family: 'Gotham-b', sans-serif
+  .message-reviews
+    font-size: 18px
+    line-height: 24px
+    p
+      margin: 0 0 15px
+      &:last-child
+        margin: 0
+      img
+        display: inline
+        margin: 5px 0 -6px 0
+
+//modules-box
+.modules-box
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 172px
+  margin: 0 0 18px
+  .image
+    background: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    width: 172px
+    height: 172px
+    box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+    border-radius: 10px
+    margin: 0 auto 22px
+  p
+    text-align: center
+    font-family: 'Gotham-m', sans-serif
+
+
+//hover img
+.image-box-hover
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  cursor: pointer
+  &:hover
+    img
+      left: -100%
+      + img
+          left: 50%
+  img
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    transition: .3s ease
+    + img
+        left: -100%
+
+
+//.question-section
+.question-section
+  position: relative
+  padding: 32px 0 100px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    height: 2788px
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(82, 140, 255, 0.7) 22.63%, rgba(255, 255, 255, 0.7) 49.24%, rgba(61, 126, 255, 0.7) 86.33%)
+    opacity: .2
+    width: 100%
+  .container
+    z-index: 1
+
+.question-section__wrapper
+  position: relative
+  z-index: 1
+  background: url("../img/pattern3.svg") no-repeat center
+    size: cover
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  //min-height: 679px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%,0)
+    width: 380px
+    height: 679px
+    background: url("../img/iphone2.png") no-repeat center
+      size: contain
+  .bg-blur
+    position: absolute
+    top: 28%
+    filter: blur(2px)
+    opacity: 0.7
+    &:nth-child(1)
+      left: -3%
+    &:nth-child(2)
+      left: 15%
+    &:nth-child(3)
+      right: 12%
+      top: 47%
+    &:nth-child(4)
+      right: -10%
+      top: 47%
+
+
+
+.question-section__box
+  max-width: 518px
+  font-size: 18px
+  text-align: center
+  padding: 31px 24px
+  background: #fff
+  box-shadow: 2px 6px 40px rgba(9, 75, 204, 0.25)
+  border-radius: 10px
+  position: relative
+  margin: 30px 20px
+  line-height: 24px
+  align-self: flex-start
+  &:before
+    content: ''
+    position: absolute
+    left: -20px
+    top: 0
+    width: 0
+    height: 0
+    border-top: 30px solid #fff
+    border-left: 30px solid transparent
+
+
+.answer-box
+  position: relative
+  box-shadow: 2px 6px 40px rgba(9, 75, 204, 0.25)
+  font-size: 18px
+  color: #fff
+  padding: 30px 37px
+  background: $accent
+  border-radius: 10px
+  max-width: 518px
+  line-height: 24px
+  align-self: flex-end
+  &:before
+    content: ''
+    position: absolute
+    right: -20px
+    top: 0
+    width: 0
+    height: 0
+    border-top: 30px solid $accent
+    border-right: 30px solid transparent
+
+.slide-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  max-width: 830px
+  margin: 0 auto
+  padding: 170px 0
+
+.question-section__slider
+  width: 100%
+
+
+//learn-more
+.learn-more
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/bg2.jpeg") no-repeat center
+    size: cover
+  padding: 205px 0
+  position: relative
+  overflow: hidden
+  .container
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    z-index: 2
+  h2
+    max-width: 450px
+    text-align: center
+    margin: 0 auto 38px
+    color: #fff
+  .btn
+    box-shadow: 0 5px 20px rgba(0, 25, 75, 0.25)
+  .image-left, .image-right
+    position: absolute
+    .icon
+      background: #ffffff
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      box-shadow: 0px 4px 25px rgba(0, 28, 82, 0.5)
+      width: 37px
+      height: 37px
+    .img
+      z-index: 1
+      position: relative
+  .image-left
+    left: -16px
+    bottom: -91px
+    max-width: 817px
+    &:before
+      content: ''
+      width: 540px
+      height: 540px
+      border-radius: 50%
+      background: rgba(#ffff, .1)
+      left: 133px
+      bottom: 0
+      position: absolute
+    &:after
+      content: ''
+      position: absolute
+      width: 590px
+      height: 572px
+      left: 130px
+      bottom: 60px
+      background: url("../img/c-1.svg") no-repeat center
+        size: contain
+    .icon
+      position: absolute
+      right: 65%
+      bottom: 57%
+      &:nth-child(2)
+        right: 32%
+        bottom: 28%
+  .image-right
+    right: -217px
+    bottom: -311px
+    max-width: 1002px
+    &:before
+      content: ''
+      width: 518px
+      height: 518px
+      border-radius: 50%
+      background: rgba(255, 255, 255, 0.1)
+      right: 21%
+      bottom: 31%
+      position: absolute
+    &:after
+      content: ''
+      position: absolute
+      width: 619px
+      height: 603px
+      right: 220px
+      top: -120px
+      background: url("../img/c-3.svg") no-repeat center
+        size: contain
+    .icon
+      position: absolute
+      bottom: 87%
+      left: 46%
+      &:nth-child(2)
+        left: 22%
+        bottom: 44%
+      &:nth-child(3)
+        left: 50%
+        bottom: 47%
+      &:nth-child(4)
+        left: 41%
+        bottom: 42%
+        svg
+          fill: $accent
+          path
+            fill: $accent
+      &:nth-child(5)
+        left: 66%
+        bottom: 50%
+      &:nth-child(6)
+        left: 29%
+        bottom: 72%
+
+
+//section blog-section
+.blog-section
+  padding: 114px 0 110px
+  position: relative
+  z-index: 1
+  .btn
+    margin: 30px auto 0
+
+
+.blog-section__content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  .wrapper-min
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+
+.blog-section__box
+  flex-direction: column
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  position: relative
+  margin: 0 0 25px
+  .image
+    position: relative
+    box-shadow: 0 8px 35px rgba(8, 60, 164, 0.15)
+    border-radius: 10px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 20px
+    border: 1px solid $green
+  .date
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    flex-direction: column
+    border-radius: 50%
+    background: #FFFFFF
+    box-shadow: 2px 8px 25px rgba(0, 44, 131, 0.25)
+    width: 76px
+    height: 76px
+    top: 19px
+    right: 19px
+    color: $accent
+    p
+      text-align: center
+      font-size: 20px
+      font-family: 'Gotham-m', sans-serif
+      margin: 0 auto 5px
+    span
+      text-align: center
+      font-size: 16px
+  .blog-title
+    a
+      font-size: 27px
+      color: #434549
+      letter-spacing: -0.5px
+      line-height: 36px
+      &:hover
+        color: $accent
+
+.blog-section__box-max
+  max-width: 787px
+
+  .image
+    height: 596px
+    width: 787px
+    img
+      transform: scale(1.3)
+  .date
+    width: 104px
+    height: 104px
+    background: $accent
+    box-shadow: 2px 8px 25px rgba(0, 44, 131, 0.25)
+    color: #fff
+  .blog-title
+    a
+      display: inline
+
+.blog-section__box-min
+  max-width: 380px
+  &:first-child
+    .image
+      align-items: flex-end
+      justify-content: flex-start
+      img
+        transform: scale(2.8)
+  &:last-child
+    margin: 0
+  .image
+    width: 380px
+    height: 230px
+    background: #DBE6FB
+    img
+      transform: scale(1.5)
+  .blog-title
+    a
+      font-size: 18px
+      line-height: 24px
+      margin: 0 0 16px
+    .view
+      margin: 0 30px 0 0
+
+.view
+  position: relative
+  padding: 0 0 0 35px
+  font-size: 16px
+  font-family: 'Gotham-m', sans-serif
+  color: $accent
+  margin: 0 30px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: -5px
+    width: 27px
+    height: 27px
+    background: url("../img/view.svg") no-repeat center
+      size: contain
+
+.time
+  position: relative
+  padding: 0 0 0 30px
+  font-size: 16px
+  font-family: 'Gotham-m', sans-serif
+  color: #434549
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: -5px
+    width: 22px
+    height: 22px
+    background: url("../img/clock.svg") no-repeat center
+      size: contain
+
+//study-with-us
+.study-with-us
+  position: relative
+  padding: 94px 0
+  z-index: 1
+  .container
+    flex-direction: column
+    align-items: flex-start
+
+  h2
+
+    max-width: 550px
+    margin: 0 0 79px
+    text-align: left
+
+.study-with-us__content
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  max-width: 650px
+
+.study-with-us__box
+  display: flex
+  align-items: center
+  justify-content: center
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F0FFEE;
+  box-shadow: 0 8px 25px rgba(0, 70, 209, 0.15)
+  border-radius: 10px
+  margin: 0 0 17px
+  width: 207px
+  height: 207px
+
+.image-bg
+  position: absolute
+  right: -20px
+  top: 50%
+  transform: translate(0,-50%)
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 10px
+  width: 1055px
+  height: 836px
+  opacity: 0.9
+  img
+    height: 100%
+    max-width: none
+    border-radius: 10px
+
+//updates-view
+.updates-view
+  position: relative
+  padding: 133px 0 0
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    background: linear-gradient(180deg, #FFFFFF 34.63%, rgba(25, 98, 241, 0.7) 118.72%)
+    opacity: .2
+    height: 1740px
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 957px
+    background: url("../img/pattern4.svg") no-repeat center
+      size: cover
+  .container
+    justify-content: space-between
+    align-items: center
+    z-index: 1
+  .left
+    max-width: 650px
+    padding: 0 0 0 100px
+    h2
+      margin: 0 0 50px
+      text-align: left
+  .image
+    margin: 0 -90px 0 0
+    width: 540px
+    height: 591px
+    overflow: hidden
+
+
+.list-social
+  display: flex
+  align-items: center
+  li
+    margin: 0 13px 0 0
+    img
+      border-radius: 50%
+      transition: .3s ease
+    &:last-child
+      margin: 0
+    a
+      &:hover
+        img
+          box-shadow: 0px 5px 20px rgba(227, 69, 95, 0.5)
+
+
